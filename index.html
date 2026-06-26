@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="id">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>D'Cling | Laundry & Cleaning Service Jakarta Selatan</title>
+      <meta name="description" content="D'Cling melayani Laundry Premium, Cuci Sofa, Cuci Kasur, Cuci Karpet, General Cleaning, Deep Cleaning, Disinfektan dan berbagai layanan kebersihan untuk rumah, kantor, apartemen dan masjid di Jakarta Selatan serta sekitarnya.">
+      <meta name="keywords" content="laundry jakarta selatan,cuci sofa jakarta,cuci kasur,cuci karpet,general cleaning,deep cleaning,jasa bersih rumah,d'cling">
+      <meta name="author" content="D'Cling">
+      <meta name="robots" content="index,follow">
+      <meta property="og:title" content="D'Cling Laundry & Cleaning Service">
+      <meta property="og:description" content="Laundry Premium dan Cleaning Service Profesional Jakarta Selatan">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="img/hero.jpg">
+      <meta property="og:locale" content="id_ID">
+      <link rel="icon" href="img/logo.jpg">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config={
+         
+         theme:{
+         
+         extend:{
+         
+         colors:{
+         
+         primary:"#215C46",
+         
+         secondary:"#2F7D5B",
+         
+         cream:"#F8F5EA",
+         
+         accent:"#DDECDD"
+         
+         }
+         
+         }
+         
+         }
+         
+         }
+         
+      </script>
+      <style>
+         html{
+         scroll-behavior:smooth;
+         }
+         body{
+         font-family:Arial,Helvetica,sans-serif;
+         background:#F8F5EA;
+         color:#1f2937;
+         overflow-x:hidden;
+         }
+         /* Scrollbar */
+         ::-webkit-scrollbar{
+         width:10px;
+         }
+         ::-webkit-scrollbar-track{
+         background:#eef3ef;
+         }
+         ::-webkit-scrollbar-thumb{
+         background:#215C46;
+         border-radius:30px;
+         }
+         /* Navbar */
+         .navbar{
+         transition:.35s;
+         }
+         .navbar.scrolled{
+         background:#ffffffee;
+         backdrop-filter:blur(12px);
+         box-shadow:0 8px 30px rgba(0,0,0,.08);
+         }
+         /* Hero */
+         .hero{
+         background:
+         linear-gradient(
+         rgba(248,245,234,.90),
+         rgba(248,245,234,.94)
+         ),
+         url("img/hero.jpg");
+         background-size:cover;
+         background-position:center;
+         background-repeat:no-repeat;
+         }
+         /* Card */
+         .card{
+         background:#fff;
+         border-radius:28px;
+         box-shadow:0 15px 45px rgba(0,0,0,.07);
+         transition:.35s;
+         }
+         .card:hover{
+         transform:translateY(-8px);
+         box-shadow:0 25px 55px rgba(0,0,0,.12);
+         }
+         /* Button */
+         .btn-primary{
+         background:#215C46;
+         color:#fff;
+         padding:15px 38px;
+         border-radius:999px;
+         font-weight:bold;
+         transition:.3s;
+         display:inline-block;
+         }
+         .btn-primary:hover{
+         background:#2F7D5B;
+         transform:translateY(-3px);
+         }
+         .btn-outline{
+         border:2px solid #215C46;
+         padding:15px 38px;
+         border-radius:999px;
+         font-weight:bold;
+         color:#215C46;
+         transition:.3s;
+         display:inline-block;
+         }
+         .btn-outline:hover{
+         background:#215C46;
+         color:white;
+         }
+         /* Floating WA */
+         .floating-wa{
+         position:fixed;
+         right:24px;
+         bottom:24px;
+         z-index:9999;
+         background:#25D366;
+         color:#fff;
+         padding:16px 24px;
+         border-radius:999px;
+         font-weight:bold;
+         box-shadow:0 15px 40px rgba(0,0,0,.25);
+         transition:.3s;
+         animation:waFloat 2s infinite;
+         }
+         .floating-wa:hover{
+         transform:scale(1.05);
+         }
+         @keyframes waFloat{
+         0%{
+         transform:translateY(0);
+         }
+         50%{
+         transform:translateY(-8px);
+         }
+         100%{
+         transform:translateY(0);
+         }
+         }
+         /* Section */
+         .section-title{
+         font-size:42px;
+         font-weight:800;
+         color:#215C46;
+         }
+         .section-subtitle{
+         max-width:700px;
+         margin:auto;
+         margin-top:20px;
+         color:#6b7280;
+         line-height:1.9;
+         }
+         /* Gallery */
+         .gallery img{
+         border-radius:24px;
+         transition:.35s;
+         cursor:pointer;
+         }
+         .gallery img:hover{
+         transform:scale(1.04);
+         }
+         /* Service Icon */
+         .service-icon{
+         width:150px;
+         height:150px;
+         object-fit:contain;
+         margin:auto;
+         margin-bottom:20px;
+         }
+         /* Badge */
+         .badge{
+         background:#DDECDD;
+         color:#215C46;
+         padding:8px 18px;
+         border-radius:999px;
+         font-size:14px;
+         font-weight:bold;
+         display:inline-block;
+         margin:5px;
+         }
+         /* Animation */
+         .fade{
+         opacity:0;
+         transform:translateY(40px);
+         transition:all .8s ease;
+         }
+         .fade.show{
+         opacity:1;
+         transform:none;
+         }
+         /* Responsive */
+         @media(max-width:768px){
+         .section-title{
+         font-size:32px;
+         }
+         .hero h1{
+         font-size:38px!important;
+         }
+         .hero p{
+         font-size:16px!important;
+         }
+         }
+      </style>
+      <script type="application/ld+json">
+         {
+         
+         "@context":"https://schema.org",
+         
+         "@type":"LocalBusiness",
+         
+         "name":"D'Cling",
+         
+         "image":"img/logo.jpg",
+         
+         "telephone":"085150967707",
+         
+         "address":{
+         
+         "@type":"PostalAddress",
+         
+         "streetAddress":"Jl. Praja Dalam K Kebayoran Lama Selatan",
+         
+         "addressLocality":"Jakarta Selatan",
+         
+         "addressRegion":"DKI Jakarta",
+         
+         "addressCountry":"ID"
+         
+         },
+         
+         "url":"#",
+         
+         "priceRange":"Rp",
+         
+         "openingHours":"Mo-Su 08:00-20:00"
+         
+         }
+         
+      </script>
+   </head>
+   <body>
+      <a
+         href="https://wa.me/6285150967707"
+         target="_blank"
+         class="floating-wa">
+      💬 Chat WhatsApp
+      </a>
+      <!-- =========================
+         NAVBAR
+         ========================= -->
+      <nav id="navbar" class="navbar fixed top-0 left-0 w-full z-50">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+               <a href="#" class="flex items-center gap-3">
+                  <img
+                     src="img/logo.jpg"
+                     alt="Logo D'Cling"
+                     class="h-14 w-auto">
+                  <div>
+                     <h2 class="font-black text-2xl text-primary">
+                        D'Cling
+                     </h2>
+                     <p class="text-xs text-gray-500">
+                        Laundry & Cleaning Service
+                     </p>
+                  </div>
+               </a>
+               <div class="hidden lg:flex items-center gap-8 font-semibold">
+                  <a href="#tentang" class="hover:text-primary transition">
+                  Tentang
+                  </a>
+                  <a href="#layanan" class="hover:text-primary transition">
+                  Layanan
+                  </a>
+                  <a href="#gallery" class="hover:text-primary transition">
+                  Gallery
+                  </a>
+                  <a href="#harga" class="hover:text-primary transition">
+                  Pricelist
+                  </a>
+                  <a href="#faq" class="hover:text-primary transition">
+                  FAQ
+                  </a>
+                  <a
+                     href="https://wa.me/6285150967707"
+                     target="_blank"
+                     class="btn-primary">
+                  Booking
+                  </a>
+               </div>
+               <button
+                  id="menuButton"
+                  class="lg:hidden text-4xl text-primary">
+               ☰
+               </button>
+            </div>
+         </div>
+      </nav>
+      <!-- =========================
+         MOBILE MENU
+         ========================= -->
+      <div
+         id="mobileMenu"
+         class="fixed top-0 right-[-100%] w-72 h-full bg-white shadow-2xl z-[999] transition-all duration-300">
+         <div class="p-8">
+            <div class="flex justify-between items-center mb-10">
+               <h2 class="text-2xl font-bold text-primary">
+                  Menu
+               </h2>
+               <button id="closeMenu" class="text-3xl">
+               ×
+               </button>
+            </div>
+            <div class="space-y-5 font-semibold">
+               <a href="#tentang" class="block">
+               Tentang
+               </a>
+               <a href="#layanan" class="block">
+               Layanan
+               </a>
+               <a href="#gallery" class="block">
+               Gallery
+               </a>
+               <a href="#harga" class="block">
+               Pricelist
+               </a>
+               <a href="#faq" class="block">
+               FAQ
+               </a>
+               <a
+                  href="https://wa.me/6285150967707"
+                  target="_blank"
+                  class="btn-primary w-full text-center">
+               Booking WhatsApp
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- =========================
+         HERO
+         ========================= -->
+      <section
+         class="hero min-h-screen flex items-center pt-24">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+               <!-- LEFT -->
+               <div class="fade">
+                  <span class="badge">
+                  ✨ Laundry & Cleaning Service Profesional
+                  </span>
+                  <h1
+                     class="text-5xl lg:text-7xl font-black leading-tight mt-6">
+                     Solusi
+                     <span class="text-primary">
+                     Laundry
+                     </span>
+                     dan
+                     <span class="text-primary">
+                     Cleaning Service
+                     </span>
+                     Terlengkap
+                  </h1>
+                  <p
+                     class="text-gray-600 text-lg mt-8 leading-9">
+                     D'Cling menghadirkan layanan laundry premium,
+                     cuci sofa,
+                     cuci kasur,
+                     cuci karpet,
+                     general cleaning,
+                     deep cleaning,
+                     hingga home disinfectant
+                     untuk rumah,
+                     apartemen,
+                     kantor,
+                     masjid,
+                     hotel,
+                     dan berbagai kebutuhan kebersihan lainnya.
+                  </p>
+                  <div
+                     class="flex flex-wrap gap-4 mt-10">
+                     <a
+                        href="https://wa.me/6285150967707"
+                        target="_blank"
+                        class="btn-primary">
+                     Booking Sekarang
+                     </a>
+                     <a
+                        href="#layanan"
+                        class="btn-outline">
+                     Lihat Layanan
+                     </a>
+                  </div>
+                  <div
+                     class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-14">
+                     <div class="card p-5 text-center">
+                        <h3 class="text-3xl font-black text-primary">
+                           10+
+                        </h3>
+                        <p class="text-sm mt-2">
+                           Layanan
+                        </p>
+                     </div>
+                     <div class="card p-5 text-center">
+                        <h3 class="text-3xl font-black text-primary">
+                           1000+
+                        </h3>
+                        <p class="text-sm mt-2">
+                           Pelanggan
+                        </p>
+                     </div>
+                     <div class="card p-5 text-center">
+                        <h3 class="text-3xl font-black text-primary">
+                           100%
+                        </h3>
+                        <p class="text-sm mt-2">
+                           Profesional
+                        </p>
+                     </div>
+                     <div class="card p-5 text-center">
+                        <h3 class="text-3xl font-black text-primary">
+                           Fast
+                        </h3>
+                        <p class="text-sm mt-2">
+                           Response
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- RIGHT -->
+               <div class="fade">
+                  <div class="relative">
+                     <img
+                        src="img/hero.jpg"
+                        alt="Cleaning Service DCling"
+                        class="rounded-[40px] shadow-2xl w-full">
+                     <div
+                        class="absolute -bottom-8 -left-8 bg-white rounded-3xl shadow-xl p-6">
+                        <div class="flex items-center gap-4">
+                           <div
+                              class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-3xl">
+                              🧼
+                           </div>
+                           <div>
+                              <h3 class="font-bold text-xl">
+                                 Bersih Maksimal
+                              </h3>
+                              <p class="text-gray-500">
+                                 Higienis & Bebas Kuman
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div
+                        class="absolute -top-8 right-0 bg-primary text-white rounded-3xl px-8 py-6 shadow-xl">
+                        ⭐⭐⭐⭐⭐
+                        <br>
+                        <span class="text-sm">
+                        Pelayanan Terbaik
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         ABOUT
+         ========================= -->
+      <section
+         id="tentang"
+         class="py-24 bg-white">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="badge">
+               Tentang D'Cling
+               </span>
+               <h2 class="section-title mt-6">
+                  Laundry & Cleaning Service Terlengkap
+               </h2>
+               <p class="section-subtitle">
+                  D'Cling melayani berbagai kebutuhan laundry dan cleaning service
+                  untuk rumah,
+                  apartemen,
+                  kantor,
+                  masjid,
+                  hotel,
+                  serta berbagai properti lainnya.
+                  Didukung tenaga profesional,
+                  peralatan modern,
+                  dan bahan pembersih berkualitas sehingga hasil lebih bersih,
+                  higienis,
+                  dan aman untuk keluarga.
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         KEUNGGULAN
+         ========================= -->
+      <section class="py-24 bg-cream">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="badge">
+               Kenapa Memilih D'Cling
+               </span>
+               <h2 class="section-title mt-6">
+                  Pelayanan Profesional & Hasil Maksimal
+               </h2>
+               <p class="section-subtitle">
+                  Kami mengutamakan kualitas pengerjaan, ketepatan waktu, serta kepuasan pelanggan dengan menggunakan tenaga berpengalaman dan peralatan modern.
+               </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+               <div class="card p-8 text-center fade">
+                  <div class="w-20 h-20 rounded-full bg-accent flex items-center justify-center mx-auto text-4xl">
+                     💰
+                  </div>
+                  <h3 class="text-2xl font-bold mt-6 text-primary">
+                     Harga Terjangkau
+                  </h3>
+                  <p class="text-gray-600 mt-4 leading-7">
+                     Harga bersahabat dengan kualitas pengerjaan profesional.
+                  </p>
+               </div>
+               <div class="card p-8 text-center fade">
+                  <div class="w-20 h-20 rounded-full bg-accent flex items-center justify-center mx-auto text-4xl">
+                     🦠
+                  </div>
+                  <h3 class="text-2xl font-bold mt-6 text-primary">
+                     Bersih & Higienis
+                  </h3>
+                  <p class="text-gray-600 mt-4 leading-7">
+                     Membersihkan noda, debu, bakteri, jamur serta membantu mengurangi tungau.
+                  </p>
+               </div>
+               <div class="card p-8 text-center fade">
+                  <div class="w-20 h-20 rounded-full bg-accent flex items-center justify-center mx-auto text-4xl">
+                     👨‍🔧
+                  </div>
+                  <h3 class="text-2xl font-bold mt-6 text-primary">
+                     Tenaga Profesional
+                  </h3>
+                  <p class="text-gray-600 mt-4 leading-7">
+                     Dikerjakan oleh tenaga berpengalaman dengan SOP yang rapi.
+                  </p>
+               </div>
+               <div class="card p-8 text-center fade">
+                  <div class="w-20 h-20 rounded-full bg-accent flex items-center justify-center mx-auto text-4xl">
+                     ⚡
+                  </div>
+                  <h3 class="text-2xl font-bold mt-6 text-primary">
+                     Pengerjaan Cepat
+                  </h3>
+                  <p class="text-gray-600 mt-4 leading-7">
+                     Respon cepat dan jadwal fleksibel sesuai kebutuhan pelanggan.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         LAYANAN
+         ========================= -->
+      <section id="layanan" class="py-24 bg-white">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="badge">
+               Layanan Kami
+               </span>
+               <h2 class="section-title mt-6">
+                  Layanan Terlengkap Indonesia
+               </h2>
+               <p class="section-subtitle">
+                  Kami menyediakan berbagai layanan laundry premium dan cleaning service untuk kebutuhan rumah, kantor, apartemen, hotel hingga masjid.
+               </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+               <!-- 1 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon1.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Laundry Premium
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Laundry kiloan, satuan, tas, sepatu, helm dan topi.
+                  </p>
+               </div>
+               <!-- 2 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon2.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Cuci Sofa
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Fabric, suede, kulit dan berbagai jenis sofa lainnya.
+                  </p>
+               </div>
+               <!-- 3 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon3.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Cuci Kasur
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Springbed, mattress serta anti tungau treatment.
+                  </p>
+               </div>
+               <!-- 4 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon4.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Cuci Karpet
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Karpet rumah, kantor, masjid dan pabrik.
+                  </p>
+               </div>
+               <!-- 5 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon5.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Kursi Kantor
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Cuci kursi kantor dan meja meeting.
+                  </p>
+               </div>
+               <!-- 6 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon6.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Cuci Gorden
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Gorden dan vertical blind.
+                  </p>
+               </div>
+               <!-- 7 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon7.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Deep Cleaning
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Kamar mandi dan dapur.
+                  </p>
+               </div>
+               <!-- 8 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon8.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     General Cleaning
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Rumah, apartemen, kantor dan ruko.
+                  </p>
+               </div>
+               <!-- 9 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon9.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Disinfektan
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Home disinfectant dan sterilisasi ruangan.
+                  </p>
+               </div>
+               <!-- 10 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon10.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Anti Tungau
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Perawatan kasur dan sofa agar lebih higienis.
+                  </p>
+               </div>
+               <!-- 11 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon11.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Parfumisasi
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Interior maupun eksterior ruangan.
+                  </p>
+               </div>
+               <!-- 12 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon12.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Paket Berlangganan
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Rumah, kantor maupun masjid.
+                  </p>
+               </div>
+               <!-- 13 -->
+               <div class="card p-8 text-center fade">
+                  <img src="img/icon13.jpg" class="service-icon">
+                  <h3 class="font-bold text-xl text-primary">
+                     Cleaning Service
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Layanan kebersihan lengkap sesuai kebutuhan Anda.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         SEMUA LAYANAN
+         ========================= -->
+      <section class="py-24 bg-primary text-white">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+               <div class="fade">
+                  <h2 class="text-5xl font-black leading-tight">
+                     Semua Kebutuhan
+                     Cleaning Service
+                     Dalam Satu Tempat
+                  </h2>
+                  <p class="text-green-100 text-lg leading-9 mt-8">
+                     Mulai dari laundry premium, cuci sofa, springbed, karpet, general cleaning hingga disinfectant dapat Anda percayakan kepada tim D'Cling.
+                  </p>
+                  <a
+                     href="https://wa.me/6285150967707"
+                     target="_blank"
+                     class="inline-block mt-10 bg-white text-primary px-10 py-4 rounded-full font-bold">
+                  Booking Sekarang
+                  </a>
+               </div>
+               <div class="fade">
+                  <img
+                     src="img/layanan.jpg"
+                     alt="Semua Layanan DCling"
+                     class="rounded-[40px] shadow-2xl w-full">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         GALERI
+         ========================= -->
+      <section id="gallery" class="py-24 bg-white">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="badge">
+               Galeri Pengerjaan
+               </span>
+               <h2 class="section-title mt-6">
+                  Hasil Pengerjaan Kami
+               </h2>
+               <p class="section-subtitle">
+                  Beberapa dokumentasi proses pengerjaan tim D'Cling di berbagai lokasi pelanggan.
+               </p>
+            </div>
+            <div class="gallery grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+               <img src="img/gallery1.jpg" loading="lazy">
+               <img src="img/gallery2.jpg" loading="lazy">
+               <img src="img/gallery3.jpg" loading="lazy">
+               <img src="img/gallery4.jpg" loading="lazy">
+               <img src="img/gallery5.jpg" loading="lazy">
+               <img src="img/gallery6.jpg" loading="lazy">
+               <img src="img/gallery7.jpg" loading="lazy">
+               <img src="img/gallery8.jpg" loading="lazy">
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         PRICELIST
+         ========================= -->
+      <section id="harga" class="py-24 bg-cream">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="badge">
+               Pricelist
+               </span>
+               <h2 class="section-title mt-6">
+                  Daftar Harga Layanan
+               </h2>
+               <p class="section-subtitle">
+                  Klik gambar untuk melihat ukuran lebih besar.
+               </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-10 mt-16">
+               <div class="card overflow-hidden fade">
+                  <img
+                     src="img/price1.jpg"
+                     alt="Pricelist DCling"
+                     class="price-img w-full cursor-pointer">
+               </div>
+               <div class="card overflow-hidden fade">
+                  <img
+                     src="img/price2.jpg"
+                     alt="Pricelist DCling"
+                     class="price-img w-full cursor-pointer">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         CARA KERJA
+         ========================= -->
+      <section class="py-24 bg-white">
+         <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="badge">
+               Cara Kerja
+               </span>
+               <h2 class="section-title mt-6">
+                  Mudah & Cepat
+               </h2>
+            </div>
+            <div class="grid lg:grid-cols-4 gap-8 mt-20">
+               <div class="card p-8 text-center fade">
+                  <div class="text-5xl mb-5">
+                     📲
+                  </div>
+                  <h3 class="text-xl font-bold text-primary">
+                     Hubungi Kami
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Booking melalui WhatsApp.
+                  </p>
+               </div>
+               <div class="card p-8 text-center fade">
+                  <div class="text-5xl mb-5">
+                     📅
+                  </div>
+                  <h3 class="text-xl font-bold text-primary">
+                     Pilih Jadwal
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Sesuaikan dengan waktu Anda.
+                  </p>
+               </div>
+               <div class="card p-8 text-center fade">
+                  <div class="text-5xl mb-5">
+                     🚚
+                  </div>
+                  <h3 class="text-xl font-bold text-primary">
+                     Tim Datang
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Datang membawa peralatan lengkap.
+                  </p>
+               </div>
+               <div class="card p-8 text-center fade">
+                  <div class="text-5xl mb-5">
+                     ✨
+                  </div>
+                  <h3 class="text-xl font-bold text-primary">
+                     Selesai
+                  </h3>
+                  <p class="mt-4 text-gray-600">
+                     Nikmati hasil yang bersih dan higienis.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         AREA
+         ========================= -->
+      <section class="py-24 bg-primary text-white">
+         <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="bg-white/20 px-5 py-2 rounded-full">
+               Area Layanan
+               </span>
+               <h2 class="text-5xl font-black mt-6">
+                  Melayani Berbagai Wilayah
+               </h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 mt-16">
+               <span class="badge">Jakarta Selatan</span>
+               <span class="badge">Jakarta Barat</span>
+               <span class="badge">Jakarta Timur</span>
+               <span class="badge">Jakarta Pusat</span>
+               <span class="badge">Jakarta Utara</span>
+               <span class="badge">Depok</span>
+               <span class="badge">Bekasi</span>
+               <span class="badge">Tangerang</span>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         FAQ
+         ========================= -->
+      <section id="faq" class="py-24 bg-white">
+         <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center fade">
+               <span class="badge">
+               FAQ
+               </span>
+               <h2 class="section-title mt-6">
+                  Pertanyaan Yang Sering Ditanyakan
+               </h2>
+            </div>
+            <div class="space-y-5 mt-16">
+               <details class="card p-6">
+                  <summary class="font-bold cursor-pointer">
+                     Apakah melayani panggilan ke rumah?
+                  </summary>
+                  <p class="mt-5 text-gray-600">
+                     Ya. Tim kami datang langsung ke lokasi pelanggan.
+                  </p>
+               </details>
+               <details class="card p-6">
+                  <summary class="font-bold cursor-pointer">
+                     Apakah menggunakan bahan yang aman?
+                  </summary>
+                  <p class="mt-5 text-gray-600">
+                     Ya. Kami menggunakan chemical berkualitas dan aman digunakan sesuai prosedur.
+                  </p>
+               </details>
+               <details class="card p-6">
+                  <summary class="font-bold cursor-pointer">
+                     Apakah bisa untuk kantor dan masjid?
+                  </summary>
+                  <p class="mt-5 text-gray-600">
+                     Bisa. Kami melayani rumah, apartemen, kantor, hotel, ruko hingga masjid.
+                  </p>
+               </details>
+               <details class="card p-6">
+                  <summary class="font-bold cursor-pointer">
+                     Bagaimana cara booking?
+                  </summary>
+                  <p class="mt-5 text-gray-600">
+                     Klik tombol WhatsApp lalu kirim lokasi dan jadwal yang diinginkan.
+                  </p>
+               </details>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         CTA
+         ========================= -->
+      <section class="py-24 bg-primary">
+         <div class="max-w-5xl mx-auto px-6 text-center text-white">
+            <h2 class="text-5xl font-black">
+               Rumah Bersih Dimulai Hari Ini
+            </h2>
+            <p class="text-xl mt-8 text-green-100">
+               Hubungi D'Cling sekarang dan jadwalkan layanan terbaik untuk rumah maupun kantor Anda.
+            </p>
+            <a
+               href="https://wa.me/6285150967707"
+               target="_blank"
+               class="inline-block mt-10 bg-white text-primary px-12 py-5 rounded-full font-bold text-lg">
+            Booking WhatsApp
+            </a>
+         </div>
+      </section>
+      <!-- =========================
+         FOOTER
+         ========================= -->
+      <footer class="bg-[#183C2E] text-white py-16">
+         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-10">
+            <div>
+               <img
+                  src="img/logo.png"
+                  class="h-16 mb-5">
+               <p class="leading-8 text-green-100">
+                  Laundry Premium & Cleaning Service Profesional dengan berbagai layanan untuk rumah, kantor, apartemen dan berbagai properti lainnya.
+               </p>
+            </div>
+            <div>
+               <h3 class="font-bold text-2xl mb-6">
+                  Kontak
+               </h3>
+               <p class="mb-3">
+                  📞 0851-5096-7707
+               </p>
+               <p class="leading-8">
+                  📍 Jl. Praja Dalam K, Kebayoran Lama Selatan,
+                  Jakarta Selatan,
+                  DKI Jakarta
+               </p>
+            </div>
+            <div>
+               <h3 class="font-bold text-2xl mb-6">
+                  Layanan
+               </h3>
+               <ul class="space-y-2 text-green-100">
+                  <li>Laundry Premium</li>
+                  <li>Cuci Sofa</li>
+                  <li>Cuci Kasur</li>
+                  <li>Cuci Karpet</li>
+                  <li>General Cleaning</li>
+                  <li>Deep Cleaning</li>
+                  <li>Disinfektan</li>
+               </ul>
+            </div>
+         </div>
+         <div class="border-t border-white/20 mt-12 pt-8 text-center text-green-100">
+            © 2026 D'Cling. All Rights Reserved.
+         </div>
+      </footer>
+      <!-- LIGHTBOX -->
+      <div
+         id="lightbox"
+         class="fixed inset-0 bg-black/90 hidden items-center justify-center z-[99999] p-6">
+         <button
+            id="closeLightbox"
+            class="absolute top-8 right-8 text-white text-5xl">
+         ×
+         </button>
+         <img
+            id="lightboxImage"
+            class="max-w-full max-h-full rounded-3xl">
+      </div>
+      <script>
+         /* ==========================
+         STICKY NAVBAR
+         ========================== */
+         
+         const navbar=document.getElementById("navbar");
+         
+         window.addEventListener("scroll",()=>{
+         
+         if(window.scrollY>80){
+         
+         navbar.classList.add("scrolled");
+         
+         }else{
+         
+         navbar.classList.remove("scrolled");
+         
+         }
+         
+         });
+         
+         
+         /* ==========================
+         MOBILE MENU
+         ========================== */
+         
+         const menuButton=document.getElementById("menuButton");
+         
+         const closeMenu=document.getElementById("closeMenu");
+         
+         const mobileMenu=document.getElementById("mobileMenu");
+         
+         menuButton.onclick=()=>{
+         
+         mobileMenu.style.right="0";
+         
+         }
+         
+         closeMenu.onclick=()=>{
+         
+         mobileMenu.style.right="-100%";
+         
+         }
+         
+         document.querySelectorAll("#mobileMenu a").forEach(item=>{
+         
+         item.onclick=()=>{
+         
+         mobileMenu.style.right="-100%";
+         
+         }
+         
+         });
+         
+         
+         /* ==========================
+         SCROLL ANIMATION
+         ========================== */
+         
+         const observer=new IntersectionObserver(entries=>{
+         
+         entries.forEach(entry=>{
+         
+         if(entry.isIntersecting){
+         
+         entry.target.classList.add("show");
+         
+         }
+         
+         });
+         
+         },{threshold:.15});
+         
+         document.querySelectorAll(".fade").forEach(el=>{
+         
+         observer.observe(el);
+         
+         });
+         
+         
+         /* ==========================
+         LIGHTBOX
+         ========================== */
+         
+         const lightbox=document.getElementById("lightbox");
+         
+         const lightboxImage=document.getElementById("lightboxImage");
+         
+         document.querySelectorAll(".gallery img").forEach(img=>{
+         
+         img.onclick=()=>{
+         
+         lightbox.style.display="flex";
+         
+         lightboxImage.src=img.src;
+         
+         }
+         
+         });
+         
+         document.querySelectorAll(".price-img").forEach(img=>{
+         
+         img.onclick=()=>{
+         
+         lightbox.style.display="flex";
+         
+         lightboxImage.src=img.src;
+         
+         }
+         
+         });
+         
+         document.getElementById("closeLightbox").onclick=()=>{
+         
+         lightbox.style.display="none";
+         
+         }
+         
+         lightbox.onclick=(e)=>{
+         
+         if(e.target===lightbox){
+         
+         lightbox.style.display="none";
+         
+         }
+         
+         }
+         
+         
+         /* ==========================
+         BACK TO TOP
+         ========================== */
+         
+         const back=document.createElement("div");
+         
+         back.innerHTML="⬆";
+         
+         back.style.position="fixed";
+         
+         back.style.bottom="100px";
+         
+         back.style.right="25px";
+         
+         back.style.width="52px";
+         
+         back.style.height="52px";
+         
+         back.style.borderRadius="50%";
+         
+         back.style.background="#215C46";
+         
+         back.style.color="#fff";
+         
+         back.style.display="flex";
+         
+         back.style.alignItems="center";
+         
+         back.style.justifyContent="center";
+         
+         back.style.cursor="pointer";
+         
+         back.style.boxShadow="0 10px 30px rgba(0,0,0,.2)";
+         
+         back.style.opacity="0";
+         
+         back.style.transition=".3s";
+         
+         back.style.zIndex="999";
+         
+         document.body.appendChild(back);
+         
+         window.addEventListener("scroll",()=>{
+         
+         if(window.scrollY>500){
+         
+         back.style.opacity="1";
+         
+         }else{
+         
+         back.style.opacity="0";
+         
+         }
+         
+         });
+         
+         back.onclick=()=>{
+         
+         window.scrollTo({
+         
+         top:0,
+         
+         behavior:"smooth"
+         
+         });
+         
+         }
+         
+         
+         /* ==========================
+         COUNTER
+         ========================== */
+         
+         document.querySelectorAll(".card h3").forEach(el=>{
+         
+         const txt=el.innerText;
+         
+         if(txt.includes("+")){
+         
+         let number=parseInt(txt);
+         
+         if(!isNaN(number)){
+         
+         let count=0;
+         
+         const speed=Math.max(1,Math.ceil(number/80));
+         
+         const interval=setInterval(()=>{
+         
+         count+=speed;
+         
+         if(count>=number){
+         
+         count=number;
+         
+         clearInterval(interval);
+         
+         }
+         
+         el.innerText=count+"+";
+         
+         },20);
+         
+         }
+         
+         }
+         
+         });
+         
+         
+         /* ==========================
+         LAZY LOAD IMAGE EFFECT
+         ========================== */
+         
+         document.querySelectorAll("img").forEach(img=>{
+         
+         img.style.opacity="0";
+         
+         img.style.transition=".6s";
+         
+         img.onload=()=>{
+         
+         img.style.opacity="1";
+         
+         }
+         
+         });
+         
+         
+         /* ==========================
+         SMOOTH ACTIVE LINK
+         ========================== */
+         
+         document.querySelectorAll("nav a").forEach(anchor=>{
+         
+         anchor.addEventListener("click",function(e){
+         
+         const href=this.getAttribute("href");
+         
+         if(href.startsWith("#")){
+         
+         e.preventDefault();
+         
+         document.querySelector(href).scrollIntoView({
+         
+         behavior:"smooth"
+         
+         });
+         
+         }
+         
+         });
+         
+         });
+         
+      </script>
+   </body>
+</html>
